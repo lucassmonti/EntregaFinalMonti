@@ -1,0 +1,31 @@
+// en este scss voy a tener estilos generales
+
+/*reset*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    margin: 20px;
+}
+
+footer{
+    background-color: #f8f9fa;
+    text-align: center;
+    p{
+        font-weight: 500;
+    }
+}
+
+//imports
+
+@import "html/home";
+@import "html/itinerarios";
+@import "html/emblematicos";
+@import "html/gastronomia";
+@import "utilidades/variables";
+@import "utilidades/mixin";
+@import "html/contacto";

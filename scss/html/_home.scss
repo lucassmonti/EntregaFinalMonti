@@ -1,0 +1,54 @@
+/*voy a trabajar los estilos de index.html*/
+
+//voy a trabajar los estilos de index.html
+
+//animación para el logo
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+main{
+    #ilnyc{
+        width: 80px;
+        animation-name: aparecer;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    .quienessomos{
+        margin: 0 50px;
+        padding: 30px;
+        gap: 50px;
+    }
+    //ajusto la foto grupal para que quede bien en la version mobile
+    .fotogrupal {
+        margin: 0 70px;
+        img{
+            width: 100%;
+        }
+
+    }
+
+    .fotogrupal2{
+        display: none;
+    }
+    
+    //media query para desktop
+    @media screen and (min-width: 1024px){
+        .quienessomos{
+            display: flex;
+        }
+        .fotogrupal2{
+            display: block;
+        }
+        .fotogrupal{
+            display: none;
+        }
+        
+    }
+}
